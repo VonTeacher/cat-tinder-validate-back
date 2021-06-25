@@ -1,13 +1,13 @@
 # API INTRO
-$ rails new cat_tinder_backend_instructors -d postgresql -T
-$ cd cat_tinder_backend
-$ rails db:create
-$ bundle add rspec-rails
-$ rails generate rspec:install
-$ rails server
-$ rails generate resource Cat name:string age:integer enjoys:text
-$ rails db:migrate
-$ rspec spec
+$ rails new cat_tinder_backend_instructors -d postgresql -T  
+$ cd cat_tinder_backend  
+$ rails db:create  
+$ bundle add rspec-rails  
+$ rails generate rspec:install  
+$ rails server  
+$ rails generate resource Cat name:string age:integer enjoys:text  
+$ rails db:migrate  
+$ rspec spec  
 
 # Rails Seed
 Bring in data in an array
@@ -19,17 +19,17 @@ end
 
 $ rails db:seed
 
-### trouble shooting 
-$ rails db:drop
-$ rails db:create
-$ rails db:migrate
-$ rails db:seed
+### Trouble Shooting
+$ rails db:drop  
+$ rails db:create  
+$ rails db:migrate  
+$ rails db:seed  
 
 # API CORS
 
 1. gem 'rack-cors', :require => 'rack/cors'
 
-2. config/initializers 
+2. config/initializers
     create file named cors.rb
 ```
     # Avoid CORS issues when API is called from the frontend app.

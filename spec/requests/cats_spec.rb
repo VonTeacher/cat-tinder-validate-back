@@ -67,10 +67,12 @@ RSpec.describe "Cats", type: :request do
       cat = Cat.first
       patch "/cats/#{cat.id}", params: new_cat_params
 
+      # Need to redefine the variable for cat to be the updated cat
+      cat = Cat.find cat.id
       # Assure that we get a success back
       expect(response).to have_http_status(200)
       # Assure that the edited cat has the correct attributes
-      expect(cat.age).to eq 2
+      expect(cat.age).to eq 3
     end
   end
 
