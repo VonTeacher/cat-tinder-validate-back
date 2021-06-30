@@ -1,20 +1,20 @@
 # CatTinder Validation Example
 To see the changes to the JSON object in this app, check out that branch with the following command:
 ```
-$ git co reformatted-json
+$ git checkout reformatted-json
 ```
 and then reference the latest commit.
 
 # API INTRO
-$ rails new cat_tinder_backend_instructors -d postgresql -T  
-$ cd cat_tinder_backend  
-$ rails db:create  
-$ bundle add rspec-rails  
-$ rails generate rspec:install  
-$ rails server  
-$ rails generate resource Cat name:string age:integer enjoys:text  
-$ rails db:migrate  
-$ rspec spec  
+$ rails new cat_tinder_backend_instructors -d postgresql -T
+$ cd cat_tinder_backend
+$ rails db:create
+$ bundle add rspec-rails
+$ rails generate rspec:install
+$ rails server
+$ rails generate resource Cat name:string age:integer enjoys:text
+$ rails db:migrate
+$ rspec spec
 
 # Rails Seed
 Bring in data in an array
@@ -27,10 +27,10 @@ end
 $ rails db:seed
 
 ### Trouble Shooting
-$ rails db:drop  
-$ rails db:create  
-$ rails db:migrate  
-$ rails db:seed  
+$ rails db:drop
+$ rails db:create
+$ rails db:migrate
+$ rails db:seed
 
 # API CORS
 
