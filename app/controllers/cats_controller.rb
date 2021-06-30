@@ -10,7 +10,7 @@ class CatsController < ApplicationController
     if cat.valid?
       render json: cat
     else
-      render json: cat.errors, status: 422
+      render json: { errors: cat.errors, status: 422 }
     end
   end
 
