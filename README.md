@@ -1,3 +1,10 @@
+# CatTinder Validation Example
+To see the changes to the JSON object in this app, check out that branch with the following command:
+```
+$ git co reformatted-json
+```
+and then reference the latest commit.
+
 # API INTRO
 $ rails new cat_tinder_backend_instructors -d postgresql -T  
 $ cd cat_tinder_backend  
