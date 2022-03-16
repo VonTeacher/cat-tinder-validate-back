@@ -9,7 +9,11 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+      time: "17:00"
+      timezone: "UTC"
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+      time: "17:05"
+      timezone: "UTC"
